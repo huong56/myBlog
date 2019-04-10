@@ -41,7 +41,7 @@ export class PostListItemComponent implements OnInit {
 		this.postsService.updatePost(index, this.loveIts);
 	}
 
-	onDeletePost(post: Post) {
-		this.postsService.removePost(post);
+	onDeletePost(index: number) {
+		this.postsService.removePost(index);
 	}
 }
